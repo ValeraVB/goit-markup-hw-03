@@ -6,8 +6,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background: #fff;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
@@ -32,9 +30,8 @@ a {
 ul,
 ol {
   list-style: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 address {
@@ -69,14 +66,12 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  width: 1440px;
-  height: 72px;
   background: #fff;
   flex-shrink: 0;
   justify-content: center;
 }
 
-.page-header .container {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -135,10 +130,6 @@ img {
   gap: 40px;
 }
 
-.address-item {
-  display: flex;
-}
-
 .address-link {
   color: #434455;
   font-size: 16px;
@@ -157,16 +148,16 @@ img {
 /** ==============HERO================ */
 
 .hero-image {
-  width: 1440px;
-  height: 600px;
   flex-shrink: 0;
   background: #2e2f42;
   text-align: center;
-  padding: 188px 0;
+  padding-bottom: 120px;
+  justify-content: center;
 }
 
-.hero-image .container {
+.hero-container {
   align-items: center;
+  padding: 188px 316px 40px 316px;
 }
 
 .hero-image-title {
@@ -175,8 +166,9 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   max-width: 496px;
+  justify-content: center;
 }
 
 .hero-image-btn {
@@ -191,7 +183,6 @@ img {
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
-  display: block;
   min-width: 169px;
 }
 
@@ -206,11 +197,13 @@ img {
 /** ==============BENEFITS================ */
 
 .benefits {
-  width: 1128px;
-  height: 104px;
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
+}
+
+.benefits-container {
+  align-items: center;
 }
 
 .benefits-list {
@@ -251,12 +244,14 @@ img {
 /** ==============OUR TEAM================ */
 
 .our-team {
-  width: 1440px;
-  height: 732px;
   background: #f4f4fd;
   text-align: center;
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.team-container {
+  align-items: center;
 }
 
 .our-team-title {
@@ -321,7 +316,7 @@ img {
   padding-bottom: 120px;
 }
 
-.our-portfolio .container {
+.portfolio-container {
   align-items: center;
 }
 
@@ -355,7 +350,6 @@ img {
 
 .card-content {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
   border-top: none;
 }
 
@@ -383,17 +377,13 @@ img {
 /** ==============FOOTER================ */
 
 .footer {
-  width: 1440px;
-  height: 312px;
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.footer .container {
-  width: 264px;
-  height: 112px;
-  margin-left: 156px;
+.footer-container {
+  padding-right: 864px;
 }
 
 .logo-webstudio-footer {
