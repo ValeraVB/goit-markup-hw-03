@@ -1,15 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background: #fff;
-}
-
-main {
-  flex-grow: 1;
 }
 
 h1,
@@ -148,16 +140,9 @@ img {
 /** ==============HERO================ */
 
 .hero-image {
-  flex-shrink: 0;
   background: #2e2f42;
   text-align: center;
-  padding-bottom: 120px;
-  justify-content: center;
-}
-
-.hero-container {
-  align-items: center;
-  padding: 188px 316px 40px 316px;
+  padding: 188px 0;
 }
 
 .hero-image-title {
@@ -166,9 +151,9 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
   max-width: 496px;
-  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-image-btn {
@@ -184,6 +169,8 @@ img {
   letter-spacing: 0.64px;
   cursor: pointer;
   min-width: 169px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-image-btn:hover,
@@ -199,26 +186,19 @@ img {
 .benefits {
   padding-top: 120px;
   padding-bottom: 120px;
-  text-align: center;
-}
-
-.benefits-container {
-  align-items: center;
 }
 
 .benefits-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
   flex-shrink: 0;
-  flex-basis: calc((100% - 24px) / 4);
+  
   overflow: hidden;
   text-align: center;
 }
 
 .benefits-list-item {
-  width: 264px;
-  height: 104px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
   text-align: left;
 }
 
@@ -269,7 +249,6 @@ img {
   display: flex;
   gap: 24px;
   text-align: center;
-  margin-bottom: 120px;
 }
 
 .team-card-item {
@@ -278,13 +257,12 @@ img {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  
 }
 
 .team-cart {
   padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .team-card-title {
@@ -336,20 +314,16 @@ img {
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 48px;
-  text-align: center;
 }
 
 .project-cart-item {
   background: #fff;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-  width: 360px;
-  margin-bottom: 48px;
-}
+  flex-basis: calc((100% - 3 * 24px) / 3);
+  }
 
 .card-content {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
   border-top: none;
 }
 
